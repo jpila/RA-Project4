@@ -1,0 +1,9 @@
+.banner{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../../assets/images/home-hero.jpg') no-repeat;
+  background-size: 100% 130%;
+  position: static;
+  height: 100vh;
+}

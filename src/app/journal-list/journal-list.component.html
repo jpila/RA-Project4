@@ -1,0 +1,13 @@
+<div class="journals-entry-container">
+  <div *ngFor="let journal of journals | async | slice:-4 | reverse"  class='journal-entry' (click)="onSelect(journal)">
+    <div class="journal-image">
+          <img src={{journal.imgUrl}} alt="">
+          <div class=title> <h1>{{journal.title}}</h1></div>
+          <div class=date> <h3> {{journal.date}}/ 3 Comments/ {{journal.author}}</h3></div>
+    </div>
+    <div class="journal-text">
+      <p>{{journal.content}}</p>
+      <button [routerLink]="['/detail', journal.$key]"> READ MORE</button>
+    </div>
+  </div>
+</div>

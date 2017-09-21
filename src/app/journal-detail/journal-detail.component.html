@@ -1,0 +1,17 @@
+
+
+<div *ngIf="journal">
+  <img src="{{journal.imgUrl}}" alt="">
+  <span class=journal-banner></span>
+<main>
+  <h1>{{journal.title | uppercase}}</h1>
+
+  <p>{{journal.content}}</p>
+
+  <div class=button-container>
+    <button><i class='fa fa-facebook'></i>LIKE</button>
+    <button><i class='fa fa-twitter'></i>TWEET</button>
+    <button><i class='fa fa-pinterest'></i>PIN</button>
+  </div>
+</main>
+</div>

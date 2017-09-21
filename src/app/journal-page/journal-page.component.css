@@ -1,0 +1,66 @@
+.container{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  position: relative;
+
+}
+
+
+
+img{
+  max-width: 100%;
+}
+.side-bar{
+  border-left: 1px solid lightgrey;
+  text-align: center;
+  text-align: left;
+}
+ul{
+  padding-top: 1.5rem;
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+ul li{
+  padding: 5px;
+}
+.blue-text{
+  color: #1A766D;
+}
+ul li:nth-child(4){
+  padding-top: 0px;
+  padding-left: 38px;
+}
+
+.text-container{
+  padding-top: 50px;
+  width: 100%;
+  margin-left: 50px;
+}
+h3{
+  letter-spacing: 3px;
+}
+
+button:first-of-type{
+  position: fixed;
+  left: 0;
+  top: 30%;
+  height: 40px;
+  width: 40px;
+}
+
+.form-container{
+  left: 0;
+  top: 20%;
+  background-color: rgba(155,155,155,0.8);
+  position: fixed;
+  z-index: 2;
+  width: 50%;
+  height: 35%;
+}
+
+.hidden{
+  display: none;
+}

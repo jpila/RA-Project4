@@ -1,0 +1,46 @@
+footer{
+  width: 100%;
+  height: 45vh;
+  background: url(../../assets/images/dark-wood.png) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0px;
+  margin-top: 5%;
+}
+
+.text-containers{
+  color: white;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+h3{
+  color: #D48144;
+}
+
+.text-containers div {
+  padding-right: 100px;
+}
+
+.text-containers div *{
+  padding-bottom: 5px;
+}
+
+img{
+  align-self: center;
+  margin-top: 5%;
+  margin-right: 5%;
+  max-height: 8vh
+}
+.copyright-container{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.text-containers i {
+  font-size: 1.2rem;
+}

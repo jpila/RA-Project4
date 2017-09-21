@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.white-text{
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('assets/fonts/Merriweather/Merriweather-Bold.ttf');
+}
+@font-face {
+  font-family: 'Novecento';
+  src: url('assets/fonts/Novecento/Novecentosanswide-Normal.ttf');
+}
+
+body{
+  font-family: 'Novecento';
+}

@@ -1,0 +1,60 @@
+.flex-header{
+  padding-top: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  color: white;
+}
+.logo{
+  background: url('../../assets/images/logos/inhabitent-logo-tent-white.svg') center no-repeat;
+  background-size: contain;
+  height: 60px;
+  width: 60px;
+  margin-left: 75px;
+}
+.logo:focus{
+  outline: none;
+}
+.active-logo{
+  background: url('../../assets/images/logos/inhabitent-logo-tent.svg') center no-repeat;
+
+}
+.menu{
+  margin-top: .5rem;
+}
+
+.active-link{
+  position: relative;
+  color: #1E746A;
+  border-bottom: 1px solid lightgrey;
+}
+
+.active-link div{
+  background: url('../../assets/images/logos/inhabitent-logo-tent.svg') center no-repeat;
+  background-size: contain;
+  height: 60px;
+  width: 60px;
+  margin-left: 75px;
+}
+
+.flex-header img{
+  max-height: 50px;
+  padding-left: 75px;
+}
+
+.menu{
+  padding-top: 10px;
+  padding-right: 100px;
+}
+
+.menu a{
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.menu a:visited{
+    color: inherit;
+}

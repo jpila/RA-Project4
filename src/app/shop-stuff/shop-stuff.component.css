@@ -1,0 +1,33 @@
+.textcentered{
+  text-align: center;
+}
+h1{
+  margin-top: 50px;
+}
+.stuff-container{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.stuff-container div{
+  width: 24%;
+  text-align: center;
+  border: 1px solid lightgrey;
+  border-top: 5px solid lightgrey;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+button{
+  border: none;
+  width: 100px;
+  height: 40px;
+  background-color: #20786F;
+  color: white;
+  margin-bottom: 20px;
+}
+div img{
+  padding-top: 15px;
+  max-width: 50px;
+
+}

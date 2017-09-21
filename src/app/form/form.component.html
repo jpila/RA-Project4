@@ -1,0 +1,34 @@
+<!-- <form [formGroup]="form" (ngSubmit)="submitForm(form.value)">
+  <input name="title" value="this has a real value" formControlName="title"><br/>
+  <input name="content" value="some test post" formControlName="content"><br />
+  <input name="image" value="https://unsplash.it/200/300" formControlName="image"><br />
+  <input name="categories" value="awesome,kitty" formConttrolName="category"><br />
+
+</form> -->
+
+ <form [formGroup]="form" id="apiForm" method="post">
+   <button (click)="cancel()">cancel</button>
+   <h3>New Journal Form</h3>
+   <label for="">title</label>
+  <input name="title" formControlName="title" value=""><br/>
+  <label for="">content</label>
+  <textarea name="content" formControlName="content" type="textfield" value="" placeholder="Enter Content Here" rows="5"></textarea> <br/>
+  <input name="image" formControlName="image" value="http://cdn.wallpapersafari.com/0/89/bG6mNA.jpg"><br />
+  <input name="categories" value="awesome,kitty"><br />
+  <input type="button" id="submit" name="submit" value="submit" (click)="submitForm(this.form)"><br />
+</form>
+
+<!-- <form id="apiForm" method="post" #apiForm="ngForm">
+  <input type="text" id="title" name="title" value="" placeholder="This Is a Default Title" size="50"><br />
+  <textarea name="content" id="content" value="" rows="5" cols="50"></textarea><br />
+  <input type="text" id="image" name="image" value="https://unsplash.it/200/300" size="50"><br />
+
+  <select multiple id="categories" name = "categories"
+          (change)="parseSelectedValue($event.target.value)">
+    <option>--select--</option>
+    <option *ngFor="let name of categories"
+            [value]="name">{{name}}</option>
+  </select>
+  <br />
+  <input type="button" id="submit" name="submit" value="submit" (click)="submitForm(this.form)"><br />
+</form> -->

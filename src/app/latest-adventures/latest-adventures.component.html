@@ -1,0 +1,35 @@
+<h1>LATEST ADVENTURES</h1>
+
+
+<div class="adventures-container">
+<div *ngFor="let journal of journals | async | slice:-1" class="half-section canoe">
+  <img class=journal-image src="{{journal.imgUrl}}" alt="">
+  <h1 class='white-text absolute'>{{journal.title}}</h1>
+  <button class="adventure-detail-button" [routerLink]="['/detail', journal.$key]" >READ MORE</button>
+</div>
+
+<div class='half-section'>
+
+  <div class="beach"*ngFor="let journal of journals | async | slice:-2:-1">
+    <img class=journal-image src="{{journal.imgUrl}}" alt="">
+    <h2 class='white-text absolute'> {{journal.title}}</h2>
+  <button class='adventure-detail-button' [routerLink]="['/detail', journal.$key]" >READ MORE</button></div>
+
+<div class='flex'>
+
+  <div class='mountain'*ngFor="let journal of journals | async | slice:-3:-2">
+    <img class=journal-image src="{{journal.imgUrl}}" alt="">
+    <h2 class='white-text absolute'> {{journal.title}}</h2>
+    <button class='adventure-detail-button' [routerLink]="['/detail', journal.$key]">READ MORE</button></div>
+  <div class='star-gazing'*ngFor="let journal of journals | async | slice:-4:-3">
+    <img class=journal-image src="{{journal.imgUrl}}" alt="">
+    <h2 class='white-text absolute'> {{journal.title}}</h2>
+  <button class='adventure-detail-button' [routerLink]="['/detail', journal.$key]" >READ MORE</button></div>
+
+</div>
+
+</div>
+</div>
+<div class="button-container">
+<button routerLink='/journals'>MORE ADVENTURES</button>
+</div>
